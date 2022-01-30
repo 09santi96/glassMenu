@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(to bottom, #373838, #2d3235); /*dark mode background*/
+    height: 100vh;
+    z-index: -3;
+}
+
+section .color{
+    position: absolute;
+    filter: blur(150px);
+    z-index: -2;
+}
+/*---------------------position and color background tricolor ------------------------------------*/
+section .color:nth-child(1){
+    top: -350px;
+    width: 900px;
+    height: 600px;
+    background: #17310b;
+}
+section .color:nth-child(2){
+    bottom: -150px;
+    left: 90px;
+    width: 600px;
+    height: 650px;
+    background: #1c720b;
+}
+section .color:nth-child(3){
+    bottom: 50px;
+    right: 100px;
+    width: 350px;
+    height: 500px;
+    background: #54dd04;
+}
+.box{
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgb(0, 0, 0, 0.1);
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    border-right: 1px solid rgb(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+header{
+    width: 1055px;
+    height: 230px;
+    margin: 200px auto;
+}
+header .container_button{
+    float: left;
+    width: 200px;
+    height: 210px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 1px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .3s;
+    -webkit-transition: height .3s;
+    color: white;
+}
+.icons{
+    display:block;
+    margin: 40px auto;
+    padding: 7px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 0px 25px rgba(255, 255, 255, 0);
+    -webkit-box-shadow: 0px 0px 0px 25px rgba(255, 255, 255, 0);
+    transition: box-shadow .3s;
+    -webkit-transition: box-shadow .3s;;
+}
+p.text{
+opacity: 0;
+transition: opacity 1s;
+}
+header .container_button:hover{
+    overflow: visible;
+    height: 240px;
+    color: white;
+    cursor: pointer;
+}
+header .container_button:hover p.text{
+    overflow: visible;
+    height: 240px;
+    color: white;
+    opacity: 1;
+}
+.icons:hover{
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, .6);
+}
+a{
+    text-decoration: none;
+}
+.prox{
+   margin: 230px auto;
+   text-align: center;
+}
+h1, h3{
+    color: white;
+}
+
+
+ 
